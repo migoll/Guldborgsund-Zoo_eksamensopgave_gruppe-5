@@ -1,12 +1,25 @@
 /* Reset some default styles */
-body, h1, h2, p {
+body,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
 
+/* color variables */
+:root {
+  --rød: #c4262d;
+  --lyse-grøn: #9c9e30;
+  --mørke-grøn: #737d4a;
+  --sort: #4d4d4d;
+  --hvid: #ededed;
+  --blå: #039ec5;
+}
+
 /* Basic styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
