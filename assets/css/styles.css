@@ -58,31 +58,77 @@ footer {
 
 .generel-entry-points {
   display: flex;
-  gap: 20px; /* Afstand mellem entry points */
-  justify-content: center; /* Centrerer entry points */
+  gap: 20px;
+  justify-content: center;
 }
 
 .entry-point {
   flex: 1;
-}
-
-.entry-point-box {
-  background-image: ; /* Rød baggrund */
-  width: 468px; /* Juster bredden efter behov */
-  height: 468px; /* Juster højden efter behov */
-  position: relative; /* Nødvendig for at placere tekstboksen absolut */
+  width: 468px;
+  height: 468px;
+  position: relative;
+  border-radius: 16px;
 }
 
 .entry-points-text-box {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 255, 0.5); /* Blå gennemsigtig baggrund */
+  background-color: rgba(0, 0, 255, 0.5);
   text-align: center;
-  color: white; /* Tekstfarve for kontrast mod baggrunden */
-  padding: 10px 0; /* Juster padding efter behov */
+  color: white;
+  padding: 10px 0;
 }
 
 h2 {
   margin: 0;
+}
+
+/* image carousel enkelt dyr */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  flex: 0 0 33.333%;
+  min-width: 100%;
+  background-color: red;
+  height: 300px;
+}
+
+.carousel-image:nth-child(2) {
+  flex: 0 0 50%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 40px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
 }
