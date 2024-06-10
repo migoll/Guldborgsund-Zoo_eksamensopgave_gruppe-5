@@ -53,3 +53,36 @@ footer {
   padding: 10px;
   width: 100%;
 }
+
+/* Entry points */
+
+.generel-entry-points {
+  display: flex;
+  gap: 20px; /* Afstand mellem entry points */
+  justify-content: center; /* Centrerer entry points */
+}
+
+.entry-point {
+  flex: 1;
+}
+
+.entry-point-box {
+  background-image: ; /* Rød baggrund */
+  width: 468px; /* Juster bredden efter behov */
+  height: 468px; /* Juster højden efter behov */
+  position: relative; /* Nødvendig for at placere tekstboksen absolut */
+}
+
+.entry-points-text-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.5); /* Blå gennemsigtig baggrund */
+  text-align: center;
+  color: white; /* Tekstfarve for kontrast mod baggrunden */
+  padding: 10px 0; /* Juster padding efter behov */
+}
+
+h2 {
+  margin: 0;
+}
