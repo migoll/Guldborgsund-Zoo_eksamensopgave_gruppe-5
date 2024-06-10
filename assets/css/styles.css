@@ -115,11 +115,11 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
   width: 60px;
-  height: 40px;
+  height: 60px;
   background-color: blue;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 9999px;
   font-size: 16px;
   cursor: pointer;
   z-index: 10;
@@ -131,4 +131,9 @@ h2 {
 
 .next-button {
   right: 10px;
+}
+
+.next-button img,
+.prev-button img {
+  width: 36px;
 }
