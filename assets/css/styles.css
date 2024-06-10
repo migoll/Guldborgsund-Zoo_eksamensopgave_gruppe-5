@@ -116,7 +116,7 @@ h2 {
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
-  background-color: blue;
+  background-color: rgba(3, 158, 197, 0.6);
   color: white;
   border: none;
   border-radius: 9999px;
@@ -135,5 +135,5 @@ h2 {
 
 .next-button img,
 .prev-button img {
-  width: 36px;
+  width: 32px;
 }
