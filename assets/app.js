@@ -2,6 +2,13 @@ const baseURL = "https://guldborgsundzoo.nathaliawd.com/wp-json/wp/v2/";
 
 const postContainerEl = document.querySelector(".postContainer");
 
+const bloddyrTaxonomy = 6;
+const fugleTaxonomy = 7;
+const insekterTaxonomy = 8;
+const krybdyrTaxonomy = 5;
+const padderTaxonomy = 9;
+const pattedyrTaxonomy = 4;
+
 const dyrOversigtContainerEl = document.querySelector(
   ".dyr-oversigt-container"
 );
