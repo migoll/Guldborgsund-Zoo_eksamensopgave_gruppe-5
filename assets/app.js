@@ -18,7 +18,7 @@ function fetchContent() {
 }
 
 function renderVoresDyr() {
-  return fetch(baseURL + "posts/", {
+  return fetch(`${baseURL}posts?per_page=42`, {
     method: "GET",
   })
     .then((res) => res.json())
@@ -37,12 +37,12 @@ function renderVoresDyr() {
 
         // Tilføj titel, billede og indhold til det nye element
         postElement.innerHTML = `
-          <h2>${postTitle}</h2>
-          <a href="posts/${postId}">
-            <img src="${postImageURL}" alt="Billede af ${postTitle}"/>
-          </a>
-          <div>${postContent}</div>
-        `;
+        <h2>${postTitle}</h2>
+        <a href="enkelt-dyr.html?id=${postId}">
+          <img src="${postImageURL}" alt="Billede af ${postTitle}"/>
+        </a>
+        <div>${postContent}</div>
+      `;
 
         // Tilføj det nye element til dyrOversigtContainerEl
         dyrOversigtContainerEl.appendChild(postElement);
