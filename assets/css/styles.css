@@ -53,3 +53,87 @@ footer {
   padding: 10px;
   width: 100%;
 }
+
+/* Entry points */
+
+.generel-entry-points {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.entry-point {
+  flex: 1;
+  width: 468px;
+  height: 468px;
+  position: relative;
+  border-radius: 16px;
+}
+
+.entry-points-text-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.5);
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* image carousel enkelt dyr */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-image {
+  flex: 0 0 33.333%;
+  min-width: 100%;
+  background-color: red;
+  height: 300px;
+}
+
+.carousel-image:nth-child(2) {
+  flex: 0 0 50%;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(3, 158, 197, 0.6);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.next-button img,
+.prev-button img {
+  width: 32px;
+}
