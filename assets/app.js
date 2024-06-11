@@ -1,68 +1,70 @@
 const baseURL = "https://guldborgsundzoo.nathaliawd.com/wp-json/wp/v2/";
-
 const postContainerEl = document.querySelector(".postContainer");
-
-const bloddyrTaxonomy = 6;
-const fugleTaxonomy = 7;
-const insekterTaxonomy = 8;
-const krybdyrTaxonomy = 5;
-const padderTaxonomy = 9;
-const pattedyrTaxonomy = 4;
-
 const dyrOversigtContainerEl = document.querySelector(
   ".dyr-oversigt-container"
 );
-
-const params = new URLSearchParams(window.location.search);
-const dyrId = params.get("id");
+const taxonomyMap = {
+  bløddyr: 6,
+  fugle: 7,
+  insekter: 8,
+  krybdyr: 5,
+  padder: 9,
+  pattedyr: 4,
+};
 
 function fetchContent() {
-  return fetch("https://guldborgsundzoo.nathaliawd.com/wp-json/wp/v2/posts/", {
-    method: "GET",
-  })
+  return fetch(`${baseURL}posts?per_page=42`, { method: "GET" })
     .then((res) => res.json())
-    .catch((err) => console.log("fejl", err));
+    .catch((err) => console.error("fejl", err));
 }
 
 function renderVoresDyr() {
-  return fetch(`${baseURL}posts?per_page=42`, {
-    method: "GET",
-  })
+  return fetchContent().then((posts) => {
+    posts.forEach((post) => {
+      const postElement = createPostElement(post);
+      dyrOversigtContainerEl.appendChild(postElement);
+    });
+  });
+}
+
+function createPostElement(post) {
+  const postElement = document.createElement("div");
+  postElement.classList.add("post");
+  postElement.innerHTML = `
+    <h2>${post.title.rendered}</h2>
+    <a href="enkelt-dyr.html?id=${post.id}">
+      <img src="${post.acf.hero_billede_af_dyret.url}" alt="Billede af ${post.title.rendered}" />
+    </a>
+    <div>${post.content.rendered}</div>
+  `;
+  return postElement;
+}
+
+renderVoresDyr();
+
+const filterButtons = document.querySelectorAll(".filter-buttons button");
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const taxonomy = button.textContent.trim().toLowerCase();
+    const taxonomyId = taxonomyMap[taxonomy];
+    filterContent(taxonomyId);
+  });
+});
+
+function filterContent(taxonomyId) {
+  dyrOversigtContainerEl.innerHTML = "";
+  fetch(`${baseURL}posts?per_page=42&dyre-klasse=${taxonomyId}`)
     .then((res) => res.json())
     .then((posts) => {
-      // Loop gennem hvert indlæg og tilføj indholdet til DOM'en
       posts.forEach((post) => {
-        const postTitle = post.title.rendered;
-        const postContent = post.content.rendered;
-        const postImage = post.acf.hero_billede_af_dyret; // Brug hele objektet
-        const postImageURL = postImage.url;
-        const postId = post.id; // Få fat i postens ID
-
-        // Opret et nyt DOM-element til at indeholde indlægget
-        const postElement = document.createElement("div");
-        postElement.classList.add("post");
-
-        // Tilføj titel, billede og indhold til det nye element
-        postElement.innerHTML = `
-        <h2>${postTitle}</h2>
-        <a href="enkelt-dyr.html?id=${postId}">
-          <img src="${postImageURL}" alt="Billede af ${postTitle}"/>
-        </a>
-        <div>${postContent}</div>
-      `;
-
-        // Tilføj det nye element til dyrOversigtContainerEl
+        const postElement = createPostElement(post);
         dyrOversigtContainerEl.appendChild(postElement);
       });
     })
     .catch((err) => console.error("fejl", err));
 }
 
-// Kald fetchContent-funktionen for at hente og vise indholdet
-renderVoresDyr();
-
-// Billede carousel
-
+//carousel
 document.addEventListener("DOMContentLoaded", () => {
   const imagesContainer = document.querySelector(".carousel-images");
   const images = document.querySelectorAll(".carousel-image");
