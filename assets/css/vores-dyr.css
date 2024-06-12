@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+}
+
+.vores-dyr-oversigt {
+    background-color: #9C9E30;
+}
+
+.generel-title {
+    background-color: #9C9E30;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vores-dyr-intro {
+    background-color: #737D4A;
+    display: flex;
+    flex-direction: column;
+}
+
+.vores-dyr-intro p {
+    color: white;
+    padding-bottom: 24px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.vores-dyr-intro p:nth-of-type(1) {
+    font-weight: bold;
+    padding-top: 24px;
+}
+
+/* Filter buttons */
+
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-block: 16px;
+}
+
+.filter-buttons button {
+    border-width: 0;
+    background-color: white;
+    border-radius: 32px;
+    width: 90px;
+    height: 35px;
+    margin: 5px 5px;
+}
+
+.filter-buttons-top, .filter-buttons-bottom {
+    margin: 0 auto;
+}
+
+/* dyre-oversigt */
+.post a img {
+    width: 100%;
+}

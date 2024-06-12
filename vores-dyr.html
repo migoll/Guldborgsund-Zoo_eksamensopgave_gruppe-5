@@ -7,6 +7,7 @@
     <script src="./assets/app.js" defer></script>
     <script src="./assets/vores-dyr.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/vores-dyr.css" />
   </head>
   <body>
     <header>
@@ -44,7 +45,6 @@
           <h1>Vores dyr</h1>
         </section>
         <section class="vores-dyr-intro">
-          <img src="" alt="vores-dyr-img" />
           <p>Her kan du se en oversigt over alle vores dyr.</p>
           <p>
             Vi har alt fra lemurer til aber og fra slanger til rensdyr. Oplev
@@ -53,12 +53,16 @@
         </section>
         <section class="vores-dyr-oversigt">
           <div class="filter-buttons">
-            <button>Bløddyr</button>
-            <button>Fugle</button>
-            <button>Insekter</button>
-            <button>Krybdyr</button>
-            <button>Padder</button>
-            <button>Pattedyr</button>
+            <div class="filter-buttons-top">
+              <button>Bløddyr</button>
+              <button>Fugle</button>
+              <button>Insekter</button>
+            </div>
+            <div class="filter-buttons-bottom">
+             <button>Krybdyr</button>
+             <button>Padder</button>
+             <button>Pattedyr</button>
+            </div>
           </div>
           <div class="dyr-oversigt-container"></div>
           <button>Se flere dyr</button>
