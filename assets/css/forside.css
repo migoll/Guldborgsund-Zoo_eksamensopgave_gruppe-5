@@ -223,8 +223,8 @@ body {
 
 .index-aktiviteter {
     background: var(--lyse-grøn);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .aktiviteter-container {
@@ -273,6 +273,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .moned ul {
@@ -322,7 +323,216 @@ body {
     list-style: none;
 }
 
+.active, li span {
+    background-color: var(--rød);
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+/* ÅBNINGSTIDER */
+
+.index-åbningstider {
+    display: flex;
+    flex-direction: column;
+    background: var(--mørke-grøn);
+}
+
+.index-åbningstider h2, .index-åbningstider p {
+    color: white;
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+.index-åbningstider p {
+    line-height: 150%;
+}
+
+.index-åbningstider img {
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* NYHEDER */
+
+.index-nyheder {
+    display: flex;
+    flex-direction: column;
+    background: var(--lyse-grøn);
+    padding-bottom: 40px;
+}
+
+.index-nyheder h2 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.nyhed-card {
+    margin: 40px;
+    background: var(--sort);
+}
+
+.nyhed-card img {
+    width: 100%;
+}
+
+.card-text-box {
+    padding: 10px;
+}
+
+.card-text-box p {
+    color: white;
+    margin: 20px;
+}
+
+/* ZOO-SHOPPEN */
+
+.index-zoo-shoppen {
+    display: flex;
+    flex-direction: column;
+    background: var(--mørke-grøn);
+    padding-bottom: 40px;
+}
+
+.index-zoo-shoppen h2, .index-zoo-shoppen p {
+    color: white;
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+.index-zoo-shoppen p {
+    line-height: 150%;
+}
+
+.index-zoo-shoppen img {
+    width: 100%;
+}
+
+/* MOVABLE MAP */
+
+.index-map {
+    background: var(--lyse-grøn);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.movable-map img {
+    width: 100%;
+}
+
+.drag-cursor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.drag-cursor i {
+    font-size: 70px;
+}
+
+.map-functions {
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.map-functions i {
+    font-size: 25px;
+    background: var(--mørke-grøn);
+    padding: 10px;
+}
+
+/* INFORMATION */
+
+.index-information {
+    display: flex;
+    flex-direction: column;
+    background: var(--mørke-grøn);
+}
+
+.søger-medarbejdere, .historie {
+    margin: 40px;
+}
+
+.index-information img {
+    width: 100%;
+}
+
+.søger-medarbejdere h2, p, .historie h2, p {
+    color: white;
+}
+
+.søger-medarbejdere p, .historie p {
+    line-height: 150%;
+}
+
+.søger-medarbejdere button {
+    padding: 0.75rem 1.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--gul);
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.søger-medarbejdere button:hover {
+    background-color: var(--rød);
+    color: white;
+}
+
+/* FOCUSED ENTRY POINTS */
+
+.generel-entry-points {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.entry-point {
+    position: relative;
+    margin: 40px;
+}
+
+.entry-point img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.entry-points-text-box {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #039ec5a8;
+    padding: 5px;
+    border-radius: 0 0 15px 15px;
+}
+
+.entry-points-text-box h3 {
+    color: white;
+}
+
 /* FOOTER */
+
+footer {
+    margin-top: 2rem;
+}
 
 .footer-visual {
     display: flex;
@@ -332,4 +542,290 @@ body {
 
 .footer-visual img {
     width: 100%;
+}
+
+.footer-container {
+    background: #F5031F;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-container p {
+    margin: 0 40px;
+    line-height: 220%;
+    text-align: center;
+}
+
+.footer-container p:nth-child(1) {
+    font-weight: bold;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-icons i {
+    font-size: 35px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 500px) {
+    
+    .search-bar {
+        display: unset;
+    }
+
+    .navbar ul li {
+        display: unset;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .accessibility-bar i {
+        display: none;
+    }
+
+    .accessibility-bar {
+        padding: 1.5rem 2rem;
+        background: #EDEDED;
+    }
+
+    .accessibility-controls {
+        gap: 4rem;
+        margin-right: 10rem;
+    }
+
+    .search-bar {
+        padding: 10px 30px;
+        border: 2px solid silver;
+        border-radius: 20px;
+        font-size: 18px;
+        margin-left: 10rem;
+    }
+
+    .font-size-small {
+        font-size: 18px;
+        padding: 8px 11px;
+    }
+    
+    .font-size-medium {
+        font-size: 23px;
+        padding: 5px 9px;
+    }
+    
+    .font-size-big {
+        font-size: 28px;
+        font-weight: bold;
+        padding: 2.5px 8px;
+    }
+
+    .hearing-assist {
+        padding: 6.75px;
+    }
+
+    .language-flags img {
+        width: 40px;
+    }
+
+    .header-logo img {
+        height: 125px;
+        margin: 1rem 5rem;
+    }
+
+    .navbar nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5rem;
+        gap: 3rem;
+    }
+
+    .navbar nav li {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 150%;
+    }
+
+    .hero-tekst h1 {
+        font-size: 64px;
+        margin-left: 9.50rem;
+    }
+
+    .hero-tekst h2 {
+        font-size: 32px;
+        margin-left: 10rem;
+    }
+
+    .hero-container {
+        height: 95vh;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    
+    .hero-button {
+        padding: 1.25rem 2rem;
+        font-size: 24px;
+        border-radius: 10px;
+        margin: 1rem 10rem;
+    }
+
+    .aktiviteter-container {
+        margin: 0 10rem;
+    }
+
+    .aktiviteter-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .skema {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aktivitet-grid-1, .aktivitet-grid-2, .aktivitet-grid-3 {
+        grid-column: span 1;
+    }
+
+    .index-velkommen {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .velkommen-grid-1 {
+        order: 2;
+    }
+
+    .index-velkommen h2 {
+        margin: 70px;
+    }
+
+    .index-velkommen p {
+        margin-left: 70px;
+    }
+
+    .index-velkommen img {
+        margin: 0;
+        order: 1;
+    }
+
+    .index-åbningstider {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .index-åbningstider h2 {
+        margin: 70px;
+    }
+    
+    .index-åbningstider p {
+        margin-left: 70px;
+    }
+
+    .index-åbningstider img {
+        margin: 0;
+    }
+
+    .index-nyheder h2 {
+        margin-top: 6rem;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin: 70px;
+    }
+
+    .index-zoo-shoppen {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+    }
+
+    .index-zoo-shoppen h2 {
+        margin: 70px;
+    }
+
+    .index-zoo-shoppen p {
+        margin-left: 70px;
+    }
+
+    .zoo-shoppen-grid-1 img {
+        margin: 0;
+    }
+
+    .drag-cursor i {
+        font-size: 250px;
+    }
+
+    .map-functions {
+        margin: 2rem 8rem;
+        gap: 3rem;
+    }
+
+    .map-functions i {
+        font-size: 45px;
+    }
+
+    .søger-medarbejdere {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 70px;
+    }
+
+    .søger-medarbejdere button {
+        padding: 1.25rem 2rem;
+        font-size: 24px;
+        border-radius: 10px;
+        margin: 1rem 10rem;
+    }
+
+    .historie {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10rem;
+    }
+
+    .index-information h2, p {
+        margin: 40px;
+        margin-top: 0;
+    }
+
+    .index-information {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .generel-entry-points {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
 }
