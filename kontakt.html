@@ -3,120 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kontakt os | Guldborgsund Zoo</title>
     <script src="./assets/app.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/kontakt.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   </head>
   <body>
-    <div class="kontakt-introduktion">
-      <h1>Kontakt</h1>
+    <main>
+      <div class="kontakt-introduktion">
+        <h1>Kontakt</h1>
       <p>
         Du er altid velkommen til at kontakte os på telefon 54732700 eller
-        info@guldborgsundzoo.dk, hvis du har et spørgsmål om haven, faciliteter,
-        rundvisninger, børnefødselsdage, arrangementer m.m.
-      </p>
+      info@guldborgsundzoo.dk, hvis du har et spørgsmål om haven, faciliteter,
+    rundvisninger, børnefødselsdage, arrangementer m.m.
+  </p>
+</div>
+
+<section class="kontaktContainer">
+  <h2>Kom i kontakt:</h2>
+  <div class="kontakt-wrapper">
+<div class="kontakt-formular">
+  <input type="text" id="Navn" placeholder="Navn..." />
+<input type="text" id="Efternavn" placeholder="Efternavn..." />
+<input type="text" id="Email" placeholder="Email..." />
+<input type="text" id="Besked" placeholder="Skriv din besked her..." />
+<button>Send besked</button>
+</div>
+<img src="./assets/images/kort-kontakt.png" alt="" />
+  </div>
+<div class="kontakt-og-abningstider">
+  <img
+class="kontakt-icon"
+src="./assets/images/kontakt-icons/phone.svg"
+alt="Telefon ikon"
+/>
+<p>
+  Du kan kontakte os på tlf. alle dage i ugen fra kl. 10:00 til 16:00.
+Vi har kun lukket den 24/12 til 26/12 til 31/12 til 1/01
+</p>
+<img
+class="kontakt-icon"
+src="./assets/images/kontakt-icons/clock.svg"
+alt="Klokkeslet ikon"
+/>
+<p>
+  Vores zoo har åbent alle dage i ugen fra kl. 10:00 til 16:00. Vi har
+kun lukket den 24/12 til 26/12 til 31/12 til 1/01.
+</p>
+</div>
+</section>
+
+<section class="kontakt-personer">
+  <div>
+    <img
+  src="./assets/images/guldborgsund-medarbejdere/john-steno.jpg"
+alt="Portræt af John Steno"
+/>
+<div class="person-info">
+<h3>John Steno</h3>
+<p>Daglig leder</p>
+<span>25180113</span>
+<span>Email</span>
+</div>
+</div>
+
+<div>
+  <img
+src="./assets/images/guldborgsund-medarbejdere/finn-larsen.jpg"
+alt="Portræt af Finn Larsen"
+/>
+<div class="person-info">
+<h3>Finn Larsen</h3>
+<p>Stedfortræder</p>
+<span>25180117</span>
+<span>Email</span>
+</div>
+</div>
+
+<div>
+  <img
+src="./assets/images/guldborgsund-medarbejdere/camilla_s.jpg"
+alt="Portræt af Camilla H. Steinfurth"
+/>
+<div class="person-info">
+<h3>Camilla H. Steinfurth</h3>
+<p>Zoolog</p>
+<span>25180128</span>
+<span>Email</span>
+</div>
+</div>
+
+<div>
+  <img
+src="./assets/images/guldborgsund-medarbejdere/thomas-jorgensen.jpg"
+alt="Portræt af Thomas Jørgensen"
+/>
+<div class="person-info">
+<h3>Thomas Jørgensen</h3>
+<p>Dyrepasser</p>
+<span>25180121</span>
+<span>Email</span>
+</div>
+</div>
+
+<div>
+  <img
+src="./assets/images/guldborgsund-medarbejdere/_dsc2875.jpg"
+alt="Portræt af Grethe Knudsen"
+/>
+<div class="person-info">
+<h3>Grethe Knudsen</h3>
+<p>Daglig leder</p>
+<span>25180113</span>
+<span>Email</span>
+</div>
+</div>
+
+<div>
+  <img
+src="./assets/images/guldborgsund-medarbejdere/karina.jpg"
+alt="Portræt af Karina Andersen"
+/>
+<div class="person-info">
+<h3>Karina Andersen</h3>
+<p>Kontorassistent</p>
+<span>25180113</span>
+<span>Email</span>
+</div>
+</div>
+</section>
+<div class="kontakt-person-wrapper">
+<button class="se-flere-kontaktpersoner">Se flere</button>
+</div>
+</main>
+<footer>
+  <div class="footer-visual">
+    <img src="./assets/images/footer.png" alt="footer-visualization" />
+  </div>
+  <div class="footer-container">
+    <div class="footer-address">
+      <p>GULDBORGSUND ZOO & BOTANISK HAVE</p>
+      <p>ØSTRE ALLE 97</p>
+      <p>4800 NYKØBING FALSTER</p>
     </div>
-
-    <section class="kontaktContainer">
-      <p>Kontakt os</p>
-      <div class="kontakt-formular">
-        <input type="text" id="Navn" placeholder="Navn..." />
-        <input type="text" id="Efternavn" placeholder="Efternavn..." />
-        <input type="text" id="Email" placeholder="Email..." />
-        <input type="text" id="Besked" placeholder="Skriv din besked her..." />
-        <button>Send besked</button>
-      </div>
-      <img src="./assets/images/kort-kontakt.png" alt="" />
-      <div class="kontakt-og-abningstider">
-        <img
-          class="kontakt-icon"
-          src="./assets/images/kontakt-icons/phone.svg"
-          alt="Telefon ikon"
-        />
-        <p>
-          Du kan kontakte os på tlf. alle dage i ugen fra kl. 10:00 til 16:00.
-          Vi har kun lukket den 24/12 til 26/12 til 31/12 til 1/01
-        </p>
-        <img
-          class="kontakt-icon"
-          src="./assets/images/kontakt-icons/clock.svg"
-          alt="Klokkeslet ikon"
-        />
-        <p>
-          Vores zoo har åbent alle dage i ugen fra kl. 10:00 til 16:00. Vi har
-          kun lukket den 24/12 til 26/12 til 31/12 til 1/01.
-        </p>
-      </div>
-    </section>
-
-    <section class="kontakt-personer">
-      <div>
-        <img
-          src="./assets/images/guldborgsund-medarbejdere/john-steno.jpg"
-          alt="Portræt af John Steno"
-        />
-        <h3>John Steno</h3>
-        <p>Daglig leder</p>
-        <span>25180113</span>
-        <span>Email</span>
-      </div>
-
-      <div>
-        <img
-          src="./assets/images/guldborgsund-medarbejdere/finn-larsen.jpg"
-          alt="Portræt af Finn Larsen"
-        />
-        <h3>Finn Larsen</h3>
-        <p>Stedfortræder</p>
-        <span>25180117</span>
-        <span>Email</span>
-      </div>
-
-      <div>
-        <img
-          src="./assets/images/guldborgsund-medarbejdere/camilla_s.jpg"
-          alt="Portræt af Camilla H. Steinfurth"
-        />
-        <h3>Camilla H. Steinfurth</h3>
-        <p>Zoolog</p>
-        <span>25180128</span>
-        <span>Email</span>
-      </div>
-
-      <div>
-        <img
-          src="./assets/images/guldborgsund-medarbejdere/thomas-jorgensen.jpg"
-          alt="Portræt af Thomas Jørgensen"
-        />
-        <h3>Thomas Jørgensen</h3>
-        <p>Dyrepasser</p>
-        <span>25180121</span>
-        <span>Email</span>
-      </div>
-
-      <div>
-        <img
-          src="./assets/images/guldborgsund-medarbejdere/_dsc2875.jpg"
-          alt="Portræt af Grethe Knudsen"
-        />
-        <h3>Grethe Knudsen</h3>
-        <p>Daglig leder</p>
-        <span>25180113</span>
-        <span>Email</span>
-      </div>
-
-      <div>
-        <img
-          src="./assets/images/guldborgsund-medarbejdere/karina.jpg"
-          alt="Portræt af Karina Andersen"
-        />
-        <h3>Karina Andersen</h3>
-        <p>Kontorassistent</p>
-        <span>25180113</span>
-        <span>Email</span>
-      </div>
-    </section>
-    <button class="se-flere-kontaktpersoner">Se flere</button>
-  </body>
+    <div class="footer-contact">
+      <p>TLF: 5473 2700</p>
+      <p>CVR: 2918 8599</p>
+      <p>INFO@GULDBORGSUNDZOO.DK</p>
+    </div>
+    <div class="footer-icons">
+      <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
