@@ -1,5 +1,7 @@
 /* Reset some default styles */
-body, footer, header, 
+body,
+footer,
+header,
 h1,
 h2,
 p {
@@ -20,12 +22,12 @@ p {
 /* Basic styling */
 body {
   font-family: Verdana, Arial, sans-serif;
-  background-color: #ffffff;
+  background-color: #ededed;
   color: #000000;
 }
 
 header {
-  color: #ffffff;
+  color: #ededed;
 }
 
 nav ul {
@@ -49,7 +51,7 @@ h1 {
 }
 
 footer {
-  color: #ffffff;
+  color: #ededed;
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -61,6 +63,7 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-direction: column;
 }
 
 .entry-point {
@@ -69,6 +72,7 @@ footer {
   height: 468px;
   position: relative;
   border-radius: 16px;
+  padding-block: 20px;
 }
 
 .entry-points-text-box {
@@ -137,4 +141,11 @@ h2 {
 .next-button img,
 .prev-button img {
   width: 32px;
+}
+
+@media (min-width: 768px) {
+  .kontaktContainer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
