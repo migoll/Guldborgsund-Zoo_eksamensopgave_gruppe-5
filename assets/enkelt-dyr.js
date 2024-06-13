@@ -38,14 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const vidsteDuAtP = dyr.acf.latinsk_navn;
 
     specifikDyrIndhold.innerHTML = `
-    <img src="${dyrImage}" alt="${dyrTitle}" />
+      <img class="hero-image" src="${dyrImage}" alt="${dyrTitle}" />
+
+      <section class="hero-title-container">
       <h1>${dyrTitle}</h1>
+      </section>
+
+      
+      <section class="dyr-information">
+      <article class="dyr-tekst">
       <h2>Biologi</h2>
       <p>${dyrBiologi}</p>
       <h2>Trusler</h2>
-      <p>${dyrTrusler}</p>
-      <article>
-      <h3>Latinsk navn:</h3>
+      <p class="trusler">${dyrTrusler}</p>
+      </article>
+       
+      <article class="information-box">
+      <h3 class="latinsk-navn">Latinsk navn:</h3>
       <p>${latinskNavnP}</p>
       <h3>Klasse:</h3>
       <p>${klasseP}</p>
@@ -82,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <h3>Vidste du at:</h3>
       <p>${vidsteDuAtP}</p>
       </article>
+      </section>
     `;
   }
 
