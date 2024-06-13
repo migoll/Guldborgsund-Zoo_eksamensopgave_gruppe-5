@@ -95,6 +95,14 @@ h2 {
   margin: 0;
 }
 
+/* hero */
+.hero-billede {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+
 /* nav */
 
 nav {
@@ -436,7 +444,7 @@ footer {
 }
 
 .footer-container {
-  background: #F5031F;
+  background: #f5031f;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
