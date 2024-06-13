@@ -11,13 +11,14 @@ main{
 .billet {
     border: solid black;
     padding: 2rem;
-    margin: 6rem;
+    margin: 0 auto;
     border-radius: 40px;
     text-align: center;
-    box-shadow: 4px 4px 30px rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
     max-width: 400px;
     height: auto;
+    
 }
 
 .billet p {
@@ -96,7 +97,7 @@ button:hover {
     margin: 4rem;
     background-color: #737D4A;
     color: white;
-    max-width: 400px;
+    max-width: 65%;
     
 }
 
@@ -133,10 +134,6 @@ button:hover {
     .containerBillet{
         display: flex;
         justify-content: center;
-    }
-    .containerLedsager{
-        max-width: 400px;
-        height: 500px;
     }
     .containerLedsager h2{
         display: flex;

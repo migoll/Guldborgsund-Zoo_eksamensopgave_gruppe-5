@@ -282,6 +282,14 @@ nav {
   display: none;
 }
 
+.search-bar {
+  display: none;
+}
+
+.navbar ul {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .kontaktContainer {
     max-width: 1440px;
@@ -403,6 +411,10 @@ nav {
     display: unset;
   }
 }
+
+/* DISPLAY NONE */
+
+
 
 
 /* FOCUSED ENTRY POINTS */
