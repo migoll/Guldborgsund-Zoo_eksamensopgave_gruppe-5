@@ -9,32 +9,40 @@
     <link rel="stylesheet" href="./assets/css/kontakt.css" />
   </head>
   <body>
-    <h1>Kontakt</h1>
-    <p>
-      Du er altid velkommen til at kontakte os på telefon 54732700 eller
-      info@guldborgsundzoo.dk, hvis du har et spørgsmål om haven, faciliteter,
-      rundvisninger, børnefødselsdage, arrangementer m.m.
-    </p>
+    <div class="kontakt-introduktion">
+      <h1>Kontakt</h1>
+      <p>
+        Du er altid velkommen til at kontakte os på telefon 54732700 eller
+        info@guldborgsundzoo.dk, hvis du har et spørgsmål om haven, faciliteter,
+        rundvisninger, børnefødselsdage, arrangementer m.m.
+      </p>
+    </div>
 
     <section class="kontaktContainer">
-      <div>
-        <p>Kontakt os</p>
-        <span>Navn</span>
-        <span>Efternavn</span>
-        <span>Email</span>
-        <span>Skriv en besked her...</span>
+      <p>Kontakt os</p>
+      <div class="kontakt-formular">
+        <input type="text" id="Navn" placeholder="Navn..." />
+        <input type="text" id="Efternavn" placeholder="Efternavn..." />
+        <input type="text" id="Email" placeholder="Email..." />
+        <input type="text" id="Besked" placeholder="Skriv din besked her..." />
         <button>Send besked</button>
       </div>
-    </section>
-
-    <section>
-      <div>
-        <!-- icon her: -->
+      <img src="./assets/images/kort-kontakt.png" alt="" />
+      <div class="kontakt-og-abningstider">
+        <img
+          class="kontakt-icon"
+          src="./assets/images/kontakt-icons/phone.svg"
+          alt="Telefon ikon"
+        />
         <p>
           Du kan kontakte os på tlf. alle dage i ugen fra kl. 10:00 til 16:00.
           Vi har kun lukket den 24/12 til 26/12 til 31/12 til 1/01
         </p>
-        <!-- icon herr: -->
+        <img
+          class="kontakt-icon"
+          src="./assets/images/kontakt-icons/clock.svg"
+          alt="Klokkeslet ikon"
+        />
         <p>
           Vores zoo har åbent alle dage i ugen fra kl. 10:00 til 16:00. Vi har
           kun lukket den 24/12 til 26/12 til 31/12 til 1/01.
@@ -42,9 +50,12 @@
       </div>
     </section>
 
-    <section class="kontaktpersoner">
+    <section class="kontakt-personer">
       <div>
-        <img src="" alt="" />
+        <img
+          src="./assets/images/guldborgsund-medarbejdere/john-steno.jpg"
+          alt="Portræt af John Steno"
+        />
         <h3>John Steno</h3>
         <p>Daglig leder</p>
         <span>25180113</span>
@@ -52,7 +63,10 @@
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="./assets/images/guldborgsund-medarbejdere/finn-larsen.jpg"
+          alt="Portræt af Finn Larsen"
+        />
         <h3>Finn Larsen</h3>
         <p>Stedfortræder</p>
         <span>25180117</span>
@@ -60,7 +74,10 @@
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="./assets/images/guldborgsund-medarbejdere/camilla_s.jpg"
+          alt="Portræt af Camilla H. Steinfurth"
+        />
         <h3>Camilla H. Steinfurth</h3>
         <p>Zoolog</p>
         <span>25180128</span>
@@ -68,7 +85,10 @@
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="./assets/images/guldborgsund-medarbejdere/thomas-jorgensen.jpg"
+          alt="Portræt af Thomas Jørgensen"
+        />
         <h3>Thomas Jørgensen</h3>
         <p>Dyrepasser</p>
         <span>25180121</span>
@@ -76,7 +96,10 @@
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="./assets/images/guldborgsund-medarbejdere/_dsc2875.jpg"
+          alt="Portræt af Grethe Knudsen"
+        />
         <h3>Grethe Knudsen</h3>
         <p>Daglig leder</p>
         <span>25180113</span>
@@ -84,13 +107,16 @@
       </div>
 
       <div>
-        <img src="" alt="" />
+        <img
+          src="./assets/images/guldborgsund-medarbejdere/karina.jpg"
+          alt="Portræt af Karina Andersen"
+        />
         <h3>Karina Andersen</h3>
         <p>Kontorassistent</p>
         <span>25180113</span>
         <span>Email</span>
       </div>
     </section>
-    <button>Se flere</button>
+    <button class="se-flere-kontaktpersoner">Se flere</button>
   </body>
 </html>
