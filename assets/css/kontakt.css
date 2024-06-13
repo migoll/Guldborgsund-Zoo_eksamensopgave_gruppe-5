@@ -1,0 +1,144 @@
+.kontakt-introduktion p,
+.kontakt-introduktion h1 {
+  color: #707070;
+}
+
+.kontakt-introduktion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.kontakt-introduktion h1 {
+  font-size: 30px;
+  padding-block: 16px;
+}
+.kontakt-introduktion p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.kontaktContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 33px;
+  width: 100%;
+}
+
+.kontaktContainer input {
+  background-color: #9c9e30c5;
+  color: black;
+  font-weight: 500;
+  border-style: none;
+  height: 72px;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-block: 10px;
+  border-radius: 16px;
+}
+.kontaktContainer input:nth-child(5) {
+  height: 125px;
+}
+
+.kontaktContainer input[type="text"] {
+  padding-left: 20px;
+}
+
+.kontaktContainer button {
+  background-color: #ca9f28;
+  border-style: none;
+  width: 85%;
+  margin: 0 auto;
+  border-color: black;
+  border-radius: 16px;
+  height: 72px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-block: 10px 30px;
+}
+
+.kontakt-og-abningstider {
+  background-color: #737d4a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 33px 33px;
+}
+
+.kontaktContainer p {
+  width: 85%;
+  font-weight: bold;
+  padding-block: 18px;
+  margin: 0 auto;
+}
+
+.kontaktContainer p:nth-child(2),
+.kontaktContainer p:nth-child(4) {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.kontakt-icon {
+  width: 110px;
+  padding-top: 16px;
+}
+
+.kontakt-personer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kontakt-personer div {
+  margin: 0 auto;
+}
+
+.kontakt-personer img {
+  border-radius: 9999px;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 50px;
+}
+
+.se-flere-kontaktpersoner {
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 9999px;
+  color: #737d4a;
+  font-weight: bold;
+  padding: 16px 30px;
+  border-color: #737d4a;
+  margin-block: 30px;
+}
+
+@media (min-width: 768px) {
+  .kontakt-formular {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .kontakt-personer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .kontakt-og-abningstider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kontakt-icon {
+    margin: 0 auto;
+    padding-block: 20px;
+  }
+}

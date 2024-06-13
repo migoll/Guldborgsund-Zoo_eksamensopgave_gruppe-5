@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.containerFaq{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
+    width: 80%;
+    background-color: white;
+    flex-wrap: wrap;
+   
+}
+
+.faqBg{
+    background-color: #9C9E30;
+    padding-bottom: 2rem; 
+    min-height: 50vh; 
+}
+
+.accordion-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px 2px rgb(205, 204, 204);
+    padding: 1rem;
+    width: 90%;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.faq{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.faq i{
+    font-size: 40px;
+    margin-bottom: 3rem;
+}
+
+i{
+    max-width: 40px;
+}
+
+.accordion-item{
+    display: block;
+    flex-direction: column;
+    display: none;
+}
+
+.accordion-item.show{
+    display: block;
+    margin: 0;
+    padding-right: 1rem; 
+    word-wrap: break-word; 
+}
+
+.accordion-item p{
+    text-align: center;
+}
+
+.accordion-header i{
+    padding-left: 1rem;
+    flex-shrink: 0;
+}
+
+.handi{
+    margin-bottom: 2rem;
+    border: 2px solid transparent;
+    padding: 2rem;
+    
+    
+}
+
+.handi h2{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    color: #EDEDED;
+}
+
+.handi p{
+    color: #EDEDED;
+}
+
+.handiBg{
+    background-color: #737D4A;
+    padding: 2rem 0;
+    
+
+}
+
+.myndighedContainer p{
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.myndighedContainer img{
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+h2{
+    text-align: center;
+    color: #EDEDED;
+}
+
+@media (min-width: 768px) {
+    .containerFaq{
+        width: 50%;
+    }
+    .handi h2{
+        display: flex;
+        justify-content: left;
+    }
+   
+    .myndighedContainer {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: flex-start; 
+
+    }
+    
+    .myndighedContainer .content {
+        flex: 1; /* Take remaining space */
+    }
+    
+    .myndighedContainer img {
+        max-width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+  }
