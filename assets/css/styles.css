@@ -1,5 +1,7 @@
 /* Reset some default styles */
-body, footer, header, 
+body,
+footer,
+header,
 h1,
 h2,
 p {
@@ -61,6 +63,7 @@ footer {
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-direction: column;
 }
 
 .entry-point {
@@ -69,6 +72,7 @@ footer {
   height: 468px;
   position: relative;
   border-radius: 16px;
+  padding-block: 20px;
 }
 
 .entry-points-text-box {
