@@ -36,7 +36,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 nav ul li a {
@@ -46,6 +46,7 @@ nav ul li a {
 
 p {
   line-height: 30px;
+}
 
 h1 {
   font-size: 40px;
@@ -90,6 +91,127 @@ footer {
 
 h2 {
   margin: 0;
+}
+
+/* nav */
+
+nav {
+  background-image: linear-gradient(
+    rgba(15, 14, 14, 0.684),
+    rgba(19, 19, 18, 0)
+  );
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-inline: 20px;
+}
+
+.accessibility-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: #ededed;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.accessibility-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-size {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 0.5rem;
+}
+
+.font-size-small,
+.font-size-medium,
+.font-size-big {
+  background: grey;
+  color: white;
+}
+
+.font-size-small {
+  font-size: 12px;
+  padding: 8px 11px;
+}
+
+.font-size-medium {
+  font-size: 17px;
+  padding: 5px 9px;
+}
+
+.font-size-big {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 2.5px 8px;
+}
+
+.language-flags {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.language-flags img {
+  width: 24px;
+  height: auto;
+}
+
+.hearing-assist {
+  display: flex;
+  color: white;
+  background: grey;
+  padding: 3.5px;
+  font-size: 18px;
+  margin-right: 0.5rem;
+}
+
+.accessibility-bar i {
+  font-size: 25px;
+}
+
+/* HEADER */
+
+.navbar {
+  position: absolute;
+  top: 30;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent;
+}
+
+.header-logo img {
+  height: 75px;
+  padding-left: 2rem;
+}
+
+.burger-menu {
+  display: flex;
+  align-items: center;
+  padding-right: 2rem;
+}
+
+.burger-menu i {
+  font-size: 30px;
+  color: white;
 }
 
 /* image carousel enkelt dyr */
@@ -150,5 +272,112 @@ h2 {
   .kontaktContainer {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  /* nav og accesibility bar*/
+  .search-bar {
+    display: unset;
+  }
+
+  .navbar ul li {
+    display: unset;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .accessibility-bar i {
+    display: none;
+  }
+
+  .accessibility-bar {
+    padding: 1.5rem 2rem;
+    background: #ededed;
+  }
+
+  .accessibility-controls {
+    gap: 4rem;
+    margin-right: 10rem;
+  }
+
+  .search-bar {
+    padding: 10px 30px;
+    border: 2px solid silver;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-left: 10rem;
+  }
+
+  .font-size-small {
+    font-size: 18px;
+    padding: 8px 11px;
+  }
+
+  .font-size-medium {
+    font-size: 23px;
+    padding: 5px 9px;
+  }
+
+  .font-size-big {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 2.5px 8px;
+  }
+
+  .hearing-assist {
+    padding: 6.75px;
+  }
+
+  .language-flags img {
+    width: 40px;
+  }
+
+  .header-logo img {
+    height: 125px;
+    margin: 1rem 5rem;
+  }
+
+  .navbar nav ul {
+    display: flex;
+    align-items: baseline;
+    margin-right: 5rem;
+    gap: 3rem;
+  }
+
+  .navbar nav li {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .nav-and-icon a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .nav-and-icon i {
+    font-size: 2.5rem;
+  }
+
+  div:nth-child(3) > a > i {
+    color: var(--blå);
+  }
+
+  div:nth-child(4) > a > i {
+    color: var(--lyse-grøn);
+  }
+
+  div:nth-child(6) > a > i {
+    color: var(--rød);
+  }
+
+  div:nth-child(7) > a > i {
+    color: var(--hvid);
   }
 }
