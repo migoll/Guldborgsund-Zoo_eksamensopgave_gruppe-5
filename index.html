@@ -5,32 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="./assets/app.js" defer></script>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/forside.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <header>
       <div class="header-container">
         <div class="accessibility-bar">
+          <div class="search-container">
           <input type="text" class="search-bar" placeholder="Søg..." />
-          <div class="hearing-assist"></div>
-          <div>
-            <div class="font-size-small"></div>
-            <div class="font-size-medium"></div>
-            <div class="font-size-big"></div>
+          <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <div class="language-flags"></div>
+          <div class="accessibility-controls">
+          <div class="hearing-assist">
+            <span class="material-symbols-outlined">hearing</span>
+          </div>
+          <div class="text-size">
+            <div class="font-size-small">A</div>
+            <div class="font-size-medium">A</div>
+            <div class="font-size-big">A</div>
+          </div>
+          <div class="language-flags">
+            <img src="./assets/images/dansk.svg" alt="">
+            <img src="./assets/images/engelsk.svg" alt="">
+            <img src="./assets/images/tysk.svg" alt="">
+          </div>
+          </div>
         </div>
         <div class="navbar">
           <nav>
-            <img src="" alt="nav-logo" />
-            <ul></ul>
+            <div class="header-logo">
+            <img src="./assets/images/guldborgsundLogo.svg" alt="nav-logo" />
+            </div>
+            <ul>
             <li>Vores dyr</li>
             <li>Oplevelser</li>
-            <li>Billetter & åbningstider</li>
+            <li>Billetter &<br>åbningstider</li>
             <li>Nyheder</li>
-            <li>Praktisk information</li>
+            <li>Praktisk<br>information</li>
             <li>Galleri</li>
             <li>Kontakt</li>
+            </ul>
+            <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+            </div>
           </nav>
         </div>
       </div>
@@ -40,12 +59,18 @@
       <div class="container">
         <section class="index-hero">
           <div class="hero-container">
-            <h1>Guldborgsund Zoo & Botanisk Have</h1>
-            <h2>Få en fantastisk familieoplevelse sammen med dyrene</h2>
-          </div>
-          <button>Se dyrene</button>
+            <video class="hero-video" autoplay muted loop>
+                <source src="./assets/images/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-tekst">
+                <h1>Guldborgsund Zoo & Botanisk Have</h1>
+                <h2>Få en fantastisk familieoplevelse sammen med dyrene</h2>
+                <a href="./vores-dyr.html" class="hero-button">Se dyrene</a>
+            </div>
+        </div>
         </section>
         <section class="index-velkommen">
+        <div class="velkommen-grid-1">
           <h2>Velkommen!</h2>
           <p>
             Vi har åbent og dyrene har det godt. Vi forventer at holde åbent i
@@ -55,9 +80,103 @@
             Vi arbejder stadig på at dyrene trives og at give alle gæster en god
             og hyggelig oplevelse.
           </p>
-          <img src="" alt="velkommen-billede" />
+        </div>
+        <div class="velkommen-grid-2">
+          <img src="./assets/images/placeholder2.jpeg" alt="velkommen-billede" />
+        </div>
+        </section>
+        <section class="index-aktiviteter">
+          <div class="aktiviteter-container">
+            <div class="aktiviteter-header">Dagens aktiviteter</div>
+            <div class="aktiviteter-grid-container">
+              <div class="skema">
+                <div class="aktivitet-grid-1">
+                    <div class="tid">Kl. 11:00</div>
+                    <div class="aktivitet">Rensdyr - Fodring</div>
+                    <div class="tid">Kl. 11:30</div>
+                    <div class="aktivitet">Kongepython - Fodring</div>
+                    <div class="tid">Kl. 12:00</div>
+                    <div class="aktivitet">Paryksilkeaber - Fodring</div>
+                    <div class="tid">Kl. 12:30</div>
+                    <div class="aktivitet">Dværgkaiman - Fodring</div>
+                </div>
+            </div>
+            <div class="skema">
+                <div class="aktivitet-grid-2">
+                    <div class="tid">Kl. 13:30</div>
+                    <div class="aktivitet">Trompeter næsehornsfugl - Fodring</div>
+                    <div class="tid">Kl. 13:30</div>
+                    <div class="aktivitet">Dinohaven - Foredrag</div>
+                    <div class="tid">Kl. 14:00</div>
+                    <div class="aktivitet">Sneugle - Underholdning</div>
+                    <div class="tid">Kl. 14:00</div>
+                    <div class="aktivitet">Asiatisk dværgodder - Fodring</div>
+                </div>
+            </div>
+              <div class="kalender">
+                <div class="aktivitet-grid-3">
+                  <div class="moned">
+                    <ul>
+                      <i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i>
+                      <li class="moned-or">Maj<br>2024</li>
+                      <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                    </ul>
+                  </div>
+                  <ul class="ugedage">
+                    <li>M</li>
+                    <li>T</li>
+                    <li>O</li>
+                    <li>T</li>
+                    <li>F</li>
+                    <li>L</li>
+                    <li>S</li>
+                  </ul>
+                  <ul class="dage">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li><span class="active">12</span></li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="index-åbningstider">
+          <div class="abningstider-grid-1">
           <h2>Åbningstider</h2>
           <p>Fra maj til oktober er åbningstiden 09-17</p>
           <p>ZOO-shoppens åbningstider er 09-17.</p>
@@ -65,41 +184,63 @@
             Lamakiosken er åben, men kan have weekender og hverdage, hvor den er
             lukket.
           </p>
-          <img src="" alt="børn-med-slange-billede" />
+          </div>
+          <div class="abningstider-grid-2">
+          <img src="./assets/images/placeholder2.jpeg" alt="børn-med-slange-billede" />
+          </div>
         </section>
         <section class="index-nyheder">
+          <h2>Nyheder</h2>
+          <div class="card-container">
           <div class="nyhed-card">
-            <img src="" alt="" />
+            <img src="./assets/images/placeholder.jpeg" alt="" />
             <div class="card-text-box">
               <p>Paryksilkeaberne har flyttet bur</p>
             </div>
           </div>
           <div class="nyhed-card">
-            <img src="" alt="" />
+            <img src="./assets/images/placeholder.jpeg" alt="" />
             <div class="card-text-box">
               <p>Naturværkstedet får eksotisk plantesamling</p>
             </div>
           </div>
           <div class="nyhed-card">
-            <img src="" alt="" />
+            <img src="./assets/images/placeholder.jpeg" alt="" />
             <div class="card-text-box">
               <p>Regneskoven er åben efter flot renovering</p>
             </div>
           </div>
+          </div>
         </section>
         <section class="index-zoo-shoppen">
-          <img src="" alt="zoo-shoppen-img" />
+          <div class="zoo-shoppen-grid-1">
+          <img src="./assets/images/placeholder2.jpeg" alt="zoo-shoppen-img" />
+          </div>
+          <div class="zoo-shoppen-grid-2">
           <h2>Zoo-shoppen</h2>
           <p>
-            ZOO-Shoppen ligger i forbindelse med ZOO´s indgang og har samme
+            ZOO-Shoppen ligger i forbindelse med ZOO´s indgang og har samme
             åbningstider som selve haven. Du behøver ikke at betale entré for
             at få adgang til ZOO-Shoppen. Du er altid velkommen til at kigge
             forbi og handle hos os.
           </p>
-          <div class="movable-map"></div>
-        </section>
+          </div>
+          </section>
+          <section class="index-map">
+            <div class="movable-map">
+              <img src="./assets/images/kortguldborgsund(curved).png" alt="">
+              <div class="drag-cursor">
+                <i class="fa-solid fa-hand-pointer" style="color: #ffffff;"></i>
+              </div>
+              <div class="map-functions">
+                <i class="fa-solid fa-print" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-download" style="color: #ffffff;"></i>
+              </div>
+            </div>
+          </section>
         <section class="index-information">
           <div class="søger-medarbejdere">
+            <div class="medarbejdere-grid-1">
             <h2>Vi søger medarbejder</h2>
             <p>
               Skal du være en del af vores team? Hvis du har en passion indenfor
@@ -109,8 +250,16 @@
               du er engageret inden for dette, så ansøg hos os i dag!
             </p>
             <button>Kontakt os</button>
+            </div>
+            <div class="medarbejdere-grid-2">
+            <img src="./assets/images/placeholder.jpeg" alt="">
+            </div>
           </div>
           <div class="historie">
+            <div class="historie-grid-1">
+            <img src="./assets/images/placeholder.jpeg" alt="">
+            </div>
+            <div class="historie-grid-2">
             <h2>Historie</h2>
             <p>
               Guldborgsund Zoo & Botaniske Have (oprindeligt Nykøbing F.
@@ -128,32 +277,35 @@
               dyr, aktiviteter og oplevelser, som du kan deltage i med både
               familie og venner.
             </p>
+            </div>
           </div>
         </section>
         <section class="generel-entry-points">
           <div class="entry-point">
-            <img src="./assets/images/lemur_ungen_-_kopi.jpg" alt="" />
-            <div class="entry-points-text-box">
-              <h2>Vores dyr</h2>
-            </div>
+              <img src="./assets/images/lemur_ungen_-_kopi.jpg" alt="" />
+              <div class="entry-points-text-box">
+                  <h3>Vores dyr</h3>
+              </div>
           </div>
           <div class="entry-point">
-            <div class="entry-points-text-box">
-              <h2>Entré & åbningstider</h2>
-            </div>
+              <img src="./assets/images/lemur_ungen_-_kopi.jpg" alt="" />
+              <div class="entry-points-text-box">
+                  <h3>Entré & åbningstider</h3>
+              </div>
           </div>
           <div class="entry-point">
-            <div class="entry-points-text-box">
-              <h2>Praktisk Information</h2>
-            </div>
+              <img src="./assets/images/lemur_ungen_-_kopi.jpg" alt="" />
+              <div class="entry-points-text-box">
+                  <h3>Praktisk Information</h3>
+              </div>
           </div>
-        </section>
+      </section>
       </div>
     </main>
 
     <footer>
       <div class="footer-visual">
-        <img src="" alt="footer-visualization" />
+        <img src="./assets/images/footer.png" alt="footer-visualization" />
       </div>
       <div class="footer-container">
         <div class="footer-address">
@@ -167,8 +319,8 @@
           <p>INFO@GULDBORGSUNDZOO.DK</p>
         </div>
         <div class="footer-icons">
-          <img src="" alt="facebook-icon" />
-          <img src="" alt="instagram-icon" />
+          <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
         </div>
       </div>
     </footer>
