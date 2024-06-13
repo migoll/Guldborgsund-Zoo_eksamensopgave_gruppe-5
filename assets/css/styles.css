@@ -26,7 +26,7 @@ body {
 
 header {
   color: #ffffff;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 nav ul {
@@ -43,14 +43,18 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 20px;
+/* main {
+  padding-inline: 20px;
+} */
+
+p {
+  line-height: 30px;
 }
 
 footer {
   color: #ffffff;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   width: 100%;
 }
 
