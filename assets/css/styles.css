@@ -278,6 +278,10 @@ nav {
   width: 32px;
 }
 
+.navbar nav ul {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .kontaktContainer {
     max-width: 1440px;
@@ -285,16 +289,13 @@ nav {
   }
 
   /* nav og accesibility bar*/
-  .search-bar {
-    display: unset;
-  }
 
   .navbar ul li {
     display: unset;
   }
 
   .burger-menu {
-    display: none;
+    display: unset;
   }
 
   .accessibility-bar i {
@@ -348,12 +349,6 @@ nav {
     margin: 1rem 5rem;
   }
 
-  .navbar nav ul {
-    display: flex;
-    align-items: baseline;
-    margin-right: 5rem;
-    gap: 3rem;
-  }
 
   .navbar nav li {
     color: white;
@@ -392,6 +387,24 @@ nav {
   }
 }
 
+@media (min-width: 1320px) {
+  .navbar nav ul {
+    display: flex;
+    align-items: baseline;
+    margin-right: 5rem;
+    gap: 3rem;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .search-bar {
+    display: unset;
+  }
+}
+
+
 /* FOCUSED ENTRY POINTS */
 
 .generel-entry-points {
@@ -400,16 +413,22 @@ nav {
   flex-direction: column;
   padding-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 
 .entry-point {
   position: relative;
   margin: 40px;
+  display: flex;
+
 }
 
 .entry-point img {
   width: 100%;
   border-radius: 15px;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: top;
 }
 
 .entry-points-text-box {
@@ -425,6 +444,16 @@ nav {
 
 .entry-points-text-box h3 {
   color: white;
+}
+
+@media (min-width: 1030px) {
+  .generel-entry-points {
+    display: flex;
+    flex-direction: row;
+  }
+  .entry-point {
+    width: 33%;
+  }
 }
 
 /* FOOTER */
