@@ -382,6 +382,9 @@ li span {
 
 .nyhed-card img {
   width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: top;
 }
 
 .card-text-box {
@@ -508,98 +511,9 @@ p {
 
 /* DESKTOP */
 
-@media (min-width: 500px) {
-  /* .search-bar {
-    display: unset;
-  }
 
-  .navbar ul li {
-    display: unset;
-  }
-
-  .burger-menu {
-    display: none;
-  }
-
-  .accessibility-bar i {
-    display: none;
-  }
-
-  .accessibility-bar {
-    padding: 1.5rem 2rem;
-    background: #ededed;
-  }
-
-  .accessibility-controls {
-    gap: 4rem;
-    margin-right: 10rem;
-  }
-
-  .search-bar {
-    padding: 10px 30px;
-    border: 2px solid silver;
-    border-radius: 20px;
-    font-size: 18px;
-    margin-left: 10rem;
-  }
-
-  .font-size-small {
-    font-size: 18px;
-    padding: 8px 11px;
-  }
-
-  .font-size-medium {
-    font-size: 23px;
-    padding: 5px 9px;
-  }
-
-  .font-size-big {
-    font-size: 28px;
-    font-weight: bold;
-    padding: 2.5px 8px;
-  }
-
-  .hearing-assist {
-    padding: 6.75px;
-  }
-
-  .language-flags img {
-    width: 40px;
-  }
-
-  .header-logo img {
-    height: 125px;
-    margin: 1rem 5rem;
-  }
-
-  .navbar nav ul {
-    display: flex;
-    align-items: baseline;
-    margin-right: 5rem;
-    gap: 3rem;
-  }
-
-  .navbar nav li {
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 150%;
-  }
-
-  .nav-and-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-and-icon i {
-    font-size: 2.5rem;
-  }
-
-  .nav-and-icon:nth-child(4) {
-    color: red;
-  } */
-
+@media (min-width: 768px) {
+  
   .hero-tekst h1 {
     margin-top: 200px;
     font-size: 3rem;
@@ -698,13 +612,7 @@ p {
     margin-top: 6rem;
   }
 
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    margin: 70px;
-  }
+
 
   .index-zoo-shoppen {
     display: grid;
@@ -775,4 +683,25 @@ p {
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 70px;
+  }
 }
+
+@media (min-width: 1000px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 70px;
+}
+.nyhed-card {
+  width: 33%;
+}
+
+}
+
