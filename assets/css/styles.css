@@ -457,6 +457,9 @@ nav {
 .entry-points-text-box h3 {
   color: white;
 }
+.entry-points-text-box a{
+  text-decoration: none;
+}
 
 @media (min-width: 1030px) {
   .generel-entry-points {
