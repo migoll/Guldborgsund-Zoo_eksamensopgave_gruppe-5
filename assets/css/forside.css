@@ -371,6 +371,25 @@ p {
   line-height: 150%;
 }
 
+.søger-medarbejdere h2{
+  margin-bottom: 2rem;
+  text-align: center
+}
+
+.søger-medarbejdere p{
+  text-align: center;
+}
+
+.historie-grid-2 h2{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.historie-grid-2 p{
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .søger-medarbejdere button {
   padding: 0.75rem 1.5rem;
   font-size: 15px;
@@ -386,6 +405,10 @@ p {
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.søger-medarbejdere a{
+  text-decoration: none;
 }
 
 .søger-medarbejdere button:hover {
@@ -586,6 +609,23 @@ p {
 }
 .nyhed-card {
   width: 33%;
+}
+
+.historie-grid-2 h2{
+  margin-left: 2rem;
+  
+}
+
+.historie-grid-2 p{
+  margin-left: 2rem;
+}
+
+.søger-medarbejdere p{
+  margin-right: 2rem;
+}
+
+.søger-medarbejdere h2{
+  margin-right: 4rem;
 }
 
 }
